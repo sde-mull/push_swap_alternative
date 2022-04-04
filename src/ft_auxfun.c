@@ -67,18 +67,3 @@ void	ft_deallocate(t_Node **root)
 	*root = NULL;
 }
 
-/*int ft_mid_count(t_Node *stack_A)
-{
-    int count;
-    int len;
-
-    count = 0;
-    len = ft_stack_length(stack_A);
-    while (len != 2 && len != 3)
-    {
-        len = len / 4;
-        
-        count += 1;
-    }
-    return (count);
-}*/

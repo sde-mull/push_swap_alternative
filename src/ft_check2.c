@@ -125,3 +125,17 @@ void ft_check_rr(t_Node **stack_A, t_Node **stack_B)
     else
         ft_rr(stack_A, stack_B);
 }
+
+int ft_checkl(int last, t_Node *stack)
+{
+    t_Node *temp;
+
+    temp = stack;
+    while (temp != NULL)
+    {
+        if (temp->value >= last)
+            return (1);
+        temp = temp->next;
+    }
+    return(0);
+}

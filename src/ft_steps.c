@@ -22,7 +22,7 @@ t_Node	*ft_steps(int argc, char *argv[])
 	stack_a = ft_stack(argc, argv);
 	ft_check_double_error(&stack_a);
 	ft_sort(&stack_a, &stack_b);
-    //printstack(stack_a, stack_b);
+    printstack(stack_a, stack_b);
 	return (stack_a);
 }
 

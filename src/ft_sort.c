@@ -26,9 +26,8 @@ void	ft_sort(t_Node **stack_A, t_Node **stack_B)
 		ft_2_sort(stack_A);
 	if (count == 3)
 		ft_3_sort(stack_A);
-	//else if (count <= 104)
-		//ft_sort_100(stack_A, stack_B);
-	//else if (count > 100)
+	else if (count <= 150)
+		ft_sort_100(stack_A, stack_B);
 	else
 		ft_sort_rest(stack_A, stack_B);
 }

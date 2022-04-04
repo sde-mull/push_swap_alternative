@@ -77,9 +77,13 @@ void  	printstack(t_Node *stack_A, t_Node *stack_B);
 void	ft_push_a_sb(t_Node **stack_A, t_Node **stack_B);
 int		ft_check_inv_sorted(t_Node *stack_B);
 void    ft_sort_rest(t_Node **stack_A, t_Node **stack_B);
-int     ft_last(int *arr, t_Node *stack_A, int len);
-int    	ft_get_last(t_Node *stack);
-int     ft_first(int *arr, t_Node *stack_A, int len);
-int    	ft_get_first(t_Node *stack);
+int     ft_last(int *arr, t_Node *stack_A, int len, int rem);
+int    	ft_get_last(t_Node *stack, int rem);
+int     ft_first(int *arr, t_Node *stack_A, int len, int rem);
+int    	ft_get_first(t_Node *stack, int rem);
+int		ft_get_arr_len(t_Node *stack_A);
+void    ft_fill_first_last(int *first, int *last, int nbr, t_Node *stack_A);
+void    ft_sort500b(int *first, int *last, t_Node **stack_A, t_Node **stack_B, int nbr);
+int 	ft_checkl(int last, t_Node *stack);
 
 #endif

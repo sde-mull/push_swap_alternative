@@ -26,3 +26,21 @@ int	ft_stack_length(t_Node *stack_A)
 	}
 	return (count);
 }
+
+int	ft_get_arr_len(t_Node *stack_A)
+{
+	int len;
+	int removed;
+	int count;
+
+	len = ft_stack_length(stack_A);
+	removed = (len - 100) / 2;
+	count  = 0;
+	while (removed > 0)
+	{
+		len = len - 100;
+		removed = removed - 50;
+		count++;
+	}
+	return (count);
+}
